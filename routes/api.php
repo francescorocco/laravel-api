@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/works', [WorkController::class, 'index']);
+
+Route::get('/work/{id}', [WorkController::class, 'show']);
